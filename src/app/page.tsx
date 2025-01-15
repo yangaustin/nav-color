@@ -287,10 +287,10 @@ const NavColorTokens = () => {
       </div>
 
       {/* Preview Section - Moved to right side */}
-      <div className="flex-1">
-        <Card className="p-0 h-full">
-          <div className="w-64" style={{ backgroundColor: selectedNavColor }}>
-            <div className="p-4">
+      <div className="flex-1 min-h-screen">
+        <Card className="p-0 h-full sticky top-6">
+          <div className="w-64 h-full min-h-[calc(100vh-3rem)]" style={{ backgroundColor: selectedNavColor }}>
+            <div className="p-4 h-full">
               <h2 className="text-lg font-semibold mb-6" style={{ color: selectedTextColor }}>Navigation</h2>
               <nav className="space-y-2">
                 {navItems.map((item, index) => (
